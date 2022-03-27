@@ -1,0 +1,54 @@
+.d1{
+    width: 100px;
+    height: 100px;
+    border: 4px solid blue;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    animation: d1 2s 5 ease-in-out ;
+}
+@keyframes d1{
+    from {transform: rotate(-45deg)}
+    50% {transform: rotate(-90deg)}
+    to {transform: rotate(-135deg)}
+}
+.d2{
+    width: 100px;
+    height: 100px;
+    border: 4px solid  blue;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    animation: d2 2s  infinite ease-in;
+}
+@keyframes d2{
+    from {transform: rotate(45deg)}
+    50% {transform: rotate(90deg)}
+    to {transform: rotate(135deg)}
+}
+.d3{
+    position: relative;
+    left: 100px;
+    top: 100px;
+    animation: d3 2s  infinite ease-in;
+}
+@keyframes d3{
+    0% {text-shadow: 0 0 3px greenyellow}
+    50% {text-shadow: 0 0 30px rgb(115, 177,0)}
+    100% {text-shadow:  0 0 3px green}
+}
+.s1{
+    position: relative;
+    left: 100px;
+    top: 1px;
+    width: 100px;
+    height: 100px;
+    animation: s1 2s  infinite ease-in;
+}
+@keyframes s1{
+   0% {border-radius: 10px; background-color: indigo; transform: translate(40px, 50px)}
+   25% {border-radius: 100%; background-color: rgb(111, 0, 255); transform: translate(40px, -50px)}
+   50% {border-radius: 30px; background-color: rgb(0, 119, 255); transform: translate(-40px, -50px)}
+   75% {border-radius: 10px; background-color: indigo; transform: translate(-40px, 50px)}
+   100% {border-radius: 10px; background-color: black ; transform: translate(40px, 50px)}
+}
